@@ -1,0 +1,45 @@
+
+.navbar {
+    background-color: #44474C;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    padding: 0.5rem;
+    align-items: center;
+}
+img{
+    width: 150px;
+    height: 80px;
+}
+.navbar__name{
+    display: flex;
+    justify-content: center
+} 
+.navbar__button{
+    justify-content: space-between;
+}
+
+.navbar button{
+    width: 9rem;
+    margin: 5px;
+    border: 2px solid;
+    border-radius: 6px;
+    padding: 1.5rem 1rem;
+}
+.navbar button:hover,
+.navbar button:active{
+    box-shadow: 2px 3px 15px #FFFFFF;
+}
+.playstation{
+    background-color: #1464EA;
+}
+.xbox{
+    background-color: #50C20B;
+}
+.nintendo{
+    background-color: #EC1C1C;
+}
+.otros{
+    background-color: #ED801A;
+}
