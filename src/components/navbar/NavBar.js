@@ -1,6 +1,6 @@
 import CartWidget from "../cartwidget/CartWidget";
 import controller from "../assets/controller.png";
-import './NavBar.css'
+import './NavBar.css';
 const NavBar = () =>{
 return(
 <nav className='navbar'>
