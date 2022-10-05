@@ -1,0 +1,9 @@
+.itemlist{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+}

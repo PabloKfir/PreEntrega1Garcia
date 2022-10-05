@@ -1,0 +1,26 @@
+.item__item{
+    display: flex;
+    flex-direction: column;
+    position: inherit;
+    border: solid;
+    border-radius: 20px;
+    height: 550px;
+    width: 300px;
+    align-items: center;
+}
+img{
+    height: 300px;
+    width: 250px;
+}
+.item__detalle{
+    border: solid;
+    border-radius: 15px;
+    height: 35px;
+    width: 100px;
+    text-align: center;
+    color: white;
+    background-color: #44474C;
+}
+.item__detalle:hover{
+    background-color: blue;
+}

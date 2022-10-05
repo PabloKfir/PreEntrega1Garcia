@@ -8,38 +8,44 @@
     padding: 0.5rem;
     align-items: center;
 }
-img{
-    width: 150px;
-    height: 80px;
-}
+
 .navbar__name{
     display: flex;
     justify-content: center
 } 
-.navbar__button{
-    justify-content: space-between;
+
+.navbar__logo{
+    width: 150px;
+    height: 80px;
+}
+:Link{
+    margin:25px;
+    text-decoration: none;
 }
 
-.navbar button{
-    width: 9rem;
-    margin: 5px;
-    border: 2px solid;
-    border-radius: 6px;
-    padding: 1.5rem 1rem;
-}
-.navbar button:hover,
-.navbar button:active{
-    box-shadow: 2px 3px 15px #FFFFFF;
-}
 .playstation{
-    background-color: #1464EA;
+    color: #1464EA;
 }
+
+.playstation:hover {
+    font-weight: 900;
+}
+
 .xbox{
-    background-color: #50C20B;
+    color: #50C20B;
+}
+.xbox:hover{
+    font-weight: 900;
 }
 .nintendo{
-    background-color: #EC1C1C;
+    color: #EC1C1C;
+}
+.nintendo:hover{
+    font-weight: 900;
 }
 .otros{
-    background-color: #ED801A;
+    color: #ED801A;
+}
+.otros:hover{
+    font-weight: 900;
 }
