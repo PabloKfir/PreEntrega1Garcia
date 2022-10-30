@@ -1,0 +1,21 @@
+.cart__container{
+    display: flex;
+    flex-direction: row;
+    width: 730px;
+    border: solid;
+    border-radius: 10px;
+    background-color: #FAEBD7;
+}
+
+.cart__items{
+    padding: 15px;
+  
+    font-size: 30px;
+ 
+}
+
+.cart__button{
+    width: 40px;
+    font-size: 30px;
+    color: red;
+}

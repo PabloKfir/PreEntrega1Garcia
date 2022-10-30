@@ -1,6 +1,6 @@
 import CartWidget from "../cartwidget/CartWidget";
 import controller from "../assets/controller.png";
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './NavBar.css';
 const NavBar = () =>{
 return(
@@ -11,12 +11,12 @@ return(
        <Link to='/'><h1 alt='controller'>Happy Gaming</h1></Link>
     </div>
     <div className='navbar__categories'>
-        <Link to={`category/ps5`} className='playstation'>Playstation 5</Link>
-        <Link to={`category/ps4`} className='playstation'>Playstation 4</Link>
-        <Link to={`category/xbox-series`} className='xbox'>XBox Series X/S</Link>
-        <Link to={`category/xboxone`} className='xbox'>Xbox One</Link>
-        <Link to={`category/switch`} className='nintendo'>Nintendo</Link>
-        <Link to={`category/clasicos`} className='otros'>Clasicos</Link>
+        <NavLink to={`category/ps5`} className={({isActive})=> isActive ? 'active' : 'playstation'}>Playstation 5</NavLink>
+        <NavLink to={`category/ps4`} className={({isActive})=> isActive ? 'active' : 'playstation'}>Playstation 4</NavLink>
+        <NavLink to={`category/xbox-series`} className={({isActive})=> isActive ? 'active' : 'xbox'}>XBox Series X/S</NavLink>
+        <NavLink to={`category/xboxone`} className={({isActive})=> isActive ? 'active' : 'xbox'}>Xbox One</NavLink>
+        <NavLink to={`category/switch`} className={({isActive})=> isActive ? 'active' : 'nintendo'}>Nintendo</NavLink>
+        <NavLink to={`category/clasicos`} className={({isActive})=> isActive ? 'active' : 'otros'}>Clasicos</NavLink>
 
     </div>
     <CartWidget />

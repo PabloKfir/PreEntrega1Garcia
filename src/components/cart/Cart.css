@@ -1,0 +1,15 @@
+.cart__empty{
+    height: 45px;
+    width: 150px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.cart__link{
+    font-size: 25px;
+    border: solid;
+    padding: 5px;
+    border-radius: 10px;
+    color: black;
+}
+

@@ -1,30 +1,37 @@
 import './itemDetailContainer.css'
 import { useState, useEffect } from 'react'
-import { getProduct } from "../../asyncMock";
+import ItemDetail from '../itemDetail/ItemDetail'
 import { useParams } from 'react-router-dom';
+import { getDoc, doc } from 'firebase/firestore';
+import { db } from '../../services/firebase'
 
-const ItemDetailContainer = () =>{
+
+const ItemDetailContainer = ({setCart}) =>{
     const [product, setProduct]= useState({});
+    const [loading, setLoading] = useState(true)
     
     const {productId} = useParams()
 
     useEffect(() => {
-        getProduct(productId).then(product=>{
-            setProduct(product)})
+        const docRef = doc(db, 'products', productId)
 
-    },[])
-    console.log(product);
+        getDoc(docRef).then(doc =>{
+            const data = doc.data()
+
+            const productAdapted = { id: doc.id, ...data}
+
+            setProduct(productAdapted)
+        })
+        .finally(()=>{
+            setLoading(false)
+        })
+    },[productId])
+   
+    if(loading) {
+        return <h1>Cargando Producto...</h1>
+    }
     return (
-        <div className='itemdetail__container'>
-            <h1> Detalle del producto</h1>
-            <div className='itemdetail__product'>
-                <h1>{product.name}</h1>
-                <h2>{product.category}</h2>
-                <img className='img__product' src= {product.img} alt='img' />
-                <h3>$ {product.price} ARS</h3>
-                <h3>{product.description}</h3>
-            </div>
-        </div>
+        <ItemDetail {...product} setCart={setCart} />
         )
 }
     

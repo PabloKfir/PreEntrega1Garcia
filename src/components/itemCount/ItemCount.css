@@ -1,0 +1,34 @@
+.counter{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.controls{
+ display: flex;
+ flex-direction: row;
+ gap: 10px;
+ 
+}
+
+.button__count{
+   
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+    font-size: 40px;
+}
+
+.number{
+    margin: 0;
+    font-size: 40px;
+}
+
+.button__add{
+    font-size: 30px;
+}

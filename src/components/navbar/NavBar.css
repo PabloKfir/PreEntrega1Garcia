@@ -26,6 +26,10 @@
 .playstation{
     color: #1464EA;
 }
+.active{
+    color: #ffff;
+    font-weight: 900;
+}
 
 .playstation:hover {
     font-weight: 900;

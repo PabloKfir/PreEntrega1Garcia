@@ -1,4 +1,4 @@
-import './itemList.css'
+import './itemList.css';
 import Item from "../item/Item";
 const ItemList = ( {products} ) =>{
     return(
@@ -6,7 +6,7 @@ const ItemList = ( {products} ) =>{
         { products.map(prod => (
             <Item key={prod.id} prod={prod}/>
         ))}
-    </div>
+        </div>
     );
 }
 export default ItemList
