@@ -6,7 +6,7 @@ Para utilizar este proyecto es necesario clonar el repositorio de github.
 https://github.com/PabloKfir/ecommerceGarcia.git
 
 Para iniciar el proyecto es necesario seguir los siguientes comandos
-- cd ecommerceGarcia-Entrega-final
+- cd ecommerceGarcia-entregafinalgarcia
 - npm install
 - npm start
 
